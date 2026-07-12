@@ -354,8 +354,161 @@ repeatCount="indefinite"/>
 <!-- ================================================= -->
 <!-- PLACEHOLDER GROUPS -->
 <!-- ================================================= -->
+<g id="asciiLayer">
 
-<g id="asciiLayer"/>
+  <!-- Floating group -->
+  <g transform="translate(70 95)">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="70 95;70 88;70 95"
+      dur="5s"
+      repeatCount="indefinite"/>
+
+    <!-- Terminal title -->
+    <text
+      x="0"
+      y="-20"
+      fill="#94A3B8"
+      font-family="monospace"
+      font-size="14">
+      > ascii.profile
+    </text>
+
+    <!-- ASCII -->
+    <g
+      fill="url(#asciiGradient)"
+      filter="url(#glow)"
+      font-family="monospace"
+      font-size="12"
+      xml:space="preserve">
+
+      <!-- Line 1 -->
+      <text x="0" y="0" opacity="0">
+        ⠀⠀⠀⠀⠀⣀⣀⣀⣀
+        <animate attributeName="opacity"
+                 begin="0s"
+                 dur="0.15s"
+                 fill="freeze"
+                 from="0"
+                 to="1"/>
+      </text>
+
+      <!-- Line 2 -->
+      <text x="0" y="16" opacity="0">
+        ⠀⠀⠀⣠██████⣄
+        <animate attributeName="opacity"
+                 begin="0.15s"
+                 dur="0.15s"
+                 fill="freeze"
+                 from="0"
+                 to="1"/>
+      </text>
+
+      <!-- Line 3 -->
+      <text x="0" y="32" opacity="0">
+        ⠀⠀⢰███▀▀▀▀███⡆
+        <animate attributeName="opacity"
+                 begin="0.30s"
+                 dur="0.15s"
+                 fill="freeze"
+                 from="0"
+                 to="1"/>
+      </text>
+
+      <!-- Line 4 -->
+      <text x="0" y="48" opacity="0">
+        ⠀⠀███  ●  ● ███
+        <animate attributeName="opacity"
+                 begin="0.45s"
+                 dur="0.15s"
+                 fill="freeze"
+                 from="0"
+                 to="1"/>
+      </text>
+
+      <!-- Line 5 -->
+      <text x="0" y="64" opacity="0">
+        ⠀⠀███   ▄    ███
+        <animate attributeName="opacity"
+                 begin="0.60s"
+                 dur="0.15s"
+                 fill="freeze"
+                 from="0"
+                 to="1"/>
+      </text>
+
+      <!-- Line 6 -->
+      <text x="0" y="80" opacity="0">
+        ⠀⠀███ ▀██▀ ███
+        <animate attributeName="opacity"
+                 begin="0.75s"
+                 dur="0.15s"
+                 fill="freeze"
+                 from="0"
+                 to="1"/>
+      </text>
+
+      <!-- Line 7 -->
+      <text x="0" y="96" opacity="0">
+        ⠀⠀⠹█████████⠏
+        <animate attributeName="opacity"
+                 begin="0.90s"
+                 dur="0.15s"
+                 fill="freeze"
+                 from="0"
+                 to="1"/>
+      </text>
+
+      <!-- Line 8 -->
+      <text x="0" y="112" opacity="0">
+        ⠀⠀⠀⠀▀████▀
+        <animate attributeName="opacity"
+                 begin="1.05s"
+                 dur="0.15s"
+                 fill="freeze"
+                 from="0"
+                 to="1"/>
+      </text>
+
+    </g>
+
+    <!-- Terminal Cursor -->
+    <rect
+      x="170"
+      y="122"
+      width="8"
+      height="14"
+      fill="#22D3EE">
+
+      <animate
+        attributeName="opacity"
+        values="1;0;1"
+        dur="0.8s"
+        repeatCount="indefinite"/>
+
+    </rect>
+
+    <!-- Scanline -->
+    <rect
+      x="-20"
+      y="-20"
+      width="320"
+      height="18"
+      fill="white"
+      opacity=".05">
+
+      <animate
+        attributeName="y"
+        values="-20;170;-20"
+        dur="3.5s"
+        repeatCount="indefinite"/>
+
+    </rect>
+
+  </g>
+
+</g>
 
 <g id="terminalLayer"/>
 

@@ -97,7 +97,7 @@
   <path d="M 30 30 L 700 30 L 500 580 L 30 580 Z" fill="url(#borderGrad)" opacity="0.03" pointer-events="none"/>
 
   <!-- ==================== LEFT PANEL: PORTRAIT ==================== -->
-  <!-- ==================== LEFT PANEL: PORTRAIT (BITIMAGE MATRIX) ==================== -->
+<!-- ==================== LEFT PANEL: PORTRAIT (BITIMAGE MATRIX) ==================== -->
   <g id="left-panel">
     <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="5s" repeatCount="indefinite" easing="ease-in-out"/>
     
@@ -155,17 +155,6 @@
       <animate attributeName="opacity" values="0.2;1;0.2" dur="1.2s" repeatCount="indefinite" />
     </text>
   </g>
-    <!-- Scanline Overlay on Portrait Box -->
-    <rect x="65" y="65" width="380" height="480" fill="url(#bgGlow2)" opacity="0.05" pointer-events="none"/>
-    
-    <!-- Matrix/Cyber Blink Cursor on Left Frame Bottom -->
-    <text x="80" y="530" class="txt-mono" font-size="12" fill="#22D3EE" opacity="0.7">SECURE_NODE://
-      <tspan fill="#F8FAFC">ONLINE</tspan>
-      <tspan fill="#22D3EE">_</tspan>
-      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.2s" repeatCount="indefinite" />
-    </text>
-  </g>
-
   <!-- ==================== RIGHT PANEL: TERMINAL ==================== -->
   <g id="right-panel" transform="translate(490, 65)">
     <!-- Header Greeting Area -->

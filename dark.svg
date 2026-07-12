@@ -1,0 +1,366 @@
+<svg
+xmlns="http://www.w3.org/2000/svg"
+width="1180"
+height="610"
+viewBox="0 0 1180 610"
+fill="none">
+
+<defs>
+
+<!-- ========================= -->
+<!-- BACKGROUND -->
+<!-- ========================= -->
+
+<linearGradient id="bgGradient"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="100%">
+
+<stop offset="0%" stop-color="#030712">
+<animate attributeName="stop-color"
+values="#030712;#071127;#030712"
+dur="12s"
+repeatCount="indefinite"/>
+</stop>
+
+<stop offset="100%" stop-color="#0B1222">
+<animate attributeName="stop-color"
+values="#0B1222;#081018;#0B1222"
+dur="12s"
+repeatCount="indefinite"/>
+</stop>
+
+</linearGradient>
+
+<!-- ========================= -->
+<!-- ACCENT -->
+<!-- ========================= -->
+
+<linearGradient
+id="accent"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="0%">
+
+<stop offset="0%" stop-color="#7C3AED">
+<animate attributeName="offset"
+values="0;0.3;0"
+dur="8s"
+repeatCount="indefinite"/>
+</stop>
+
+<stop offset="50%" stop-color="#22D3EE"/>
+
+<stop offset="100%" stop-color="#10B981"/>
+
+</linearGradient>
+
+<!-- ========================= -->
+<!-- ASCII -->
+<!-- ========================= -->
+
+<linearGradient
+id="asciiGradient"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="0%">
+
+<stop offset="0%" stop-color="#22D3EE">
+<animate
+attributeName="stop-color"
+values="#22D3EE;#7C3AED;#10B981;#22D3EE"
+dur="8s"
+repeatCount="indefinite"/>
+</stop>
+
+<stop offset="100%" stop-color="#7C3AED">
+<animate
+attributeName="stop-color"
+values="#7C3AED;#10B981;#22D3EE;#7C3AED"
+dur="8s"
+repeatCount="indefinite"/>
+</stop>
+
+</linearGradient>
+
+<!-- ========================= -->
+<!-- PANEL -->
+<!-- ========================= -->
+
+<linearGradient
+id="panelGradient"
+x1="0"
+y1="0"
+x2="0"
+y2="1">
+
+<stop offset="0%"
+stop-color="#111827"
+stop-opacity=".72"/>
+
+<stop offset="100%"
+stop-color="#0F172A"
+stop-opacity=".82"/>
+
+</linearGradient>
+
+<!-- ========================= -->
+<!-- GLOW -->
+<!-- ========================= -->
+
+<filter id="glow"
+x="-100%"
+y="-100%"
+width="300%"
+height="300%">
+
+<feGaussianBlur
+stdDeviation="6"
+result="blur"/>
+
+<feMerge>
+
+<feMergeNode in="blur"/>
+
+<feMergeNode in="SourceGraphic"/>
+
+</feMerge>
+
+</filter>
+
+<!-- ========================= -->
+<!-- PANEL SHADOW -->
+<!-- ========================= -->
+
+<filter id="shadow">
+
+<feDropShadow
+dx="0"
+dy="8"
+stdDeviation="20"
+flood-color="#000"
+flood-opacity=".45"/>
+
+</filter>
+
+<!-- ========================= -->
+<!-- GLASS -->
+<!-- ========================= -->
+
+<filter id="glass">
+
+<feGaussianBlur
+stdDeviation="12"/>
+
+</filter>
+
+<!-- ========================= -->
+<!-- NOISE -->
+<!-- ========================= -->
+
+<filter id="noise">
+
+<feTurbulence
+baseFrequency=".8"
+numOctaves="2"
+seed="7"
+type="fractalNoise"/>
+
+<feColorMatrix
+values="
+1 0 0 0 0
+0 1 0 0 0
+0 0 1 0 0
+0 0 0 .05 0"/>
+
+</filter>
+
+<!-- ========================= -->
+<!-- CLIP -->
+<!-- ========================= -->
+
+<clipPath id="clip">
+
+<rect
+x="15"
+y="15"
+width="1150"
+height="580"
+rx="28"/>
+
+</clipPath>
+
+</defs>
+
+<!-- ================================================= -->
+<!-- MAIN -->
+<!-- ================================================= -->
+
+<g clip-path="url(#clip)">
+
+<!-- BACKGROUND -->
+
+<rect
+width="1180"
+height="610"
+fill="url(#bgGradient)"/>
+
+<!-- ================================================= -->
+<!-- RADIAL GLOWS -->
+<!-- ================================================= -->
+
+<circle
+cx="170"
+cy="120"
+r="230"
+fill="#7C3AED"
+opacity=".15">
+
+<animateTransform
+attributeName="transform"
+type="translate"
+values="0 0;40 -20;0 0"
+dur="12s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle
+cx="1050"
+cy="480"
+r="260"
+fill="#22D3EE"
+opacity=".12">
+
+<animateTransform
+attributeName="transform"
+type="translate"
+values="0 0;-45 25;0 0"
+dur="14s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle
+cx="620"
+cy="310"
+r="220"
+fill="#10B981"
+opacity=".08">
+
+<animateTransform
+attributeName="transform"
+type="translate"
+values="0 0;25 20;0 0"
+dur="18s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- ================================================= -->
+<!-- NOISE -->
+<!-- ================================================= -->
+
+<rect
+width="1180"
+height="610"
+filter="url(#noise)"
+opacity=".15"/>
+
+<!-- ================================================= -->
+<!-- SCANLINE -->
+<!-- ================================================= -->
+
+<rect
+x="-1200"
+y="0"
+width="500"
+height="610"
+fill="url(#accent)"
+opacity=".05">
+
+<animate
+attributeName="x"
+values="-1200;1200"
+dur="8s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- ================================================= -->
+<!-- OUTER BORDER -->
+<!-- ================================================= -->
+
+<rect
+x="15"
+y="15"
+width="1150"
+height="580"
+rx="28"
+fill="none"
+stroke="rgba(255,255,255,.08)"
+stroke-width="2"/>
+
+<!-- ================================================= -->
+<!-- LEFT PANEL -->
+<!-- ================================================= -->
+
+<rect
+x="45"
+y="55"
+width="390"
+height="500"
+rx="22"
+fill="url(#panelGradient)"
+filter="url(#shadow)"/>
+
+<!-- ================================================= -->
+<!-- RIGHT PANEL -->
+<!-- ================================================= -->
+
+<rect
+x="470"
+y="55"
+width="665"
+height="500"
+rx="22"
+fill="url(#panelGradient)"
+filter="url(#shadow)"/>
+
+<!-- ================================================= -->
+<!-- SHIMMER -->
+<!-- ================================================= -->
+
+<rect
+x="-300"
+y="0"
+width="180"
+height="610"
+fill="white"
+opacity=".04"
+transform="rotate(18)">
+
+<animate
+attributeName="x"
+values="-400;1600"
+dur="7s"
+repeatCount="indefinite"/>
+
+</rect>
+
+<!-- ================================================= -->
+<!-- PLACEHOLDER GROUPS -->
+<!-- ================================================= -->
+
+<g id="asciiLayer"/>
+
+<g id="terminalLayer"/>
+
+<g id="particles"/>
+
+</g>
+
+</svg>

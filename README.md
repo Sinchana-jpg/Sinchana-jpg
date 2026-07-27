@@ -5,3 +5,6 @@
   </picture>
   
 </a>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Sinchana-jpg/Sinchana-jpg/output/snake.svg" alt="snake animation" />
+</div>
